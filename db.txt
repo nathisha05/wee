@@ -1,0 +1,32 @@
+CREATE DATABASE studentdb;
+
+USE studentdb;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    department VARCHAR(100),
+    city VARCHAR(100)
+);
+
+
+
+use quiz_app;
+select*from questions;
+insert into questions  values(8,"what is the captial of india","delhi","madurai","cbe","pudukkottai",1);
+insert into questions
+
+
+
+use testdb;
+
+CREATE TABLE IF NOT EXISTS expenses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    category VARCHAR(100) NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    description VARCHAR(255)
+);
+
+select * from expenses
