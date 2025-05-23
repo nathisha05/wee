@@ -1,0 +1,3 @@
+com\example\model\Student.class
+com\example\servlet\RegisterServlet.class
+com\example\servlet\ViewServlet.class
