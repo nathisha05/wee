@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="exp3.css" />
+  </head>
+  <body>
+    <form id="registrationForm" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" oninput="validateName()" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="course">Course:</label>
+      <select id="course" name="course">
+        <option value="">Select a course</option>
+        <option value="webdev">Web Development</option>
+        <option value="datasci">Data Science</option>
+        <option value="ai">Artificial Intelligence</option>
+      </select>
+
+      <label for="age">Age (18 to 60):</label>
+      <input type="number" id="age" name="age" min="18" max="60" required />
+
+      <label for="mobile"
+        >Mobile Number (starts with 6, 7, 8, or 9, 10 digits):</label
+      >
+      <input
+        type="text"
+        id="mobile"
+        name="mobile"
+        maxlength="10"
+        minlength="10"
+        required
+      />
+
+      <input type="submit" value="Register" />
+
+      <p id="error-message"></p>
+    </form>
+
+    <script src="exp3.js"></script>
+  </body>
+</html>

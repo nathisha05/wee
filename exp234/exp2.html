@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mapping</title>
+    <style>
+        
+        body {
+            background-image: url('the.jpeg'); 
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed; 
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        center {
+            margin-top: 20px;
+        }
+
+        
+        .content {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.8); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            font-size: 1.1em;
+        }
+
+        
+        li {
+            margin-bottom: 10px;
+        }
+
+        
+        img {
+            border: 3px solid #ddd;
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <img src="th.jpg" alt="fruits" usemap="#img-map">
+        <map name="img-map">
+            <area target="blank" alt="banana" title="Bananas" href="exp21.html" coords="40,83,155,60" shape="rect">
+            <area target="blank" alt="orange" title="Orange" href="exp31.html" coords="66,114,26" shape="circle">
+            <area target="blank" alt="apple" title="Apple" href="exp41.html" coords="14,91,28" shape="circle">
+            <area target="blank" alt="grapes" title="Grapes" href="exp51.html" coords="125,116,26" shape="circle">
+        </map>
+    </center>
+
+    <div class="content">
+        <h2>Fruits and Their Growing Countries</h2>
+
+        <p><strong>Apples 🍏</strong></p>
+        <p>Apples are grown in many countries, with the largest producers being China, the United States, Poland, and India.</p>
+
+        <p><strong>Oranges 🍊</strong></p>
+        <p>Oranges thrive in warm, tropical climates, and top producers include Brazil, the United States, Mexico, and Spain.</p>
+
+        <p><strong>Bananas 🍌</strong></p>
+        <p>Bananas are grown in tropical regions worldwide, with key producers being India, China, Ecuador, and the Philippines.</p>
+
+        <p><strong>Grapes 🍇</strong></p>
+        <p>Grapes are cultivated in temperate regions, and major producers include Italy, Spain, the United States, and Turkey.</p>
+    </div>
+</body>
+
+</html>
