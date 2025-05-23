@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student>
+    <id>1</id>
+    <name>Jesli</name>
+    <branch>Information Technology</branch>
+  </student>
+  <student>
+    <id>2</id>
+    <name>Alex</name>
+    <branch>Computer Science</branch>
+  </student>
+  <student>
+    <id>3</id>
+    <name>Maria</name>
+    <branch>Electronics</branch>
+  </student>
+</students>
